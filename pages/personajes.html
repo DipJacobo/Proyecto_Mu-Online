@@ -11,31 +11,65 @@
       content="Blog orientado a los amantes del mu online"
     />
     <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body>
-    <header>
-      <div><a href="./index.html"><img class="imgLogo" src="../img/logo-negro-mu.jpg" alt="Logo de mu online"></a>
+  <body class="row">
+    <header class="container">
+      <div class="row">
+        <a href="../index.html"
+          ><img
+            class="imgLogo col"
+            src="../img/logo-negro-mu.jpg"
+            alt="Logo de mu online"
+        /></a>
       </div>
-   <div> 
-     <nav class="Nav">
-      <ul class="flex">
-        <li> <a class="margenes" href="../index.html"> Inicio</a>
-        </li>
-        <li><a class="margenes" href="./historia.html">Historia</a></li>
-        <li><a class="margenes" href="./personajes.html">Personajes</a></li>
-        <li><a  class="margenes" href="./galeria.html">Galeria</a></li>
-        <li><a class="margenes" href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
-  </header>
+      <div class="container flex">
+        <nav class="navbar navbar-expand-sm">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#itemsNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="itemsNav">
+            <ul class="flex navbar-nav ms-auto">
+              <li class="col nav-item">
+                <a class="margenes" href="../index.html"> Inicio</a>
+              </li>
+              <li class="col nav-item">
+                <a class="margenes" href="./historia.html">Historia</a>
+              </li>
+              <li class="col nav-item">
+                <a class="margenes" href="./personajes.html"
+                  >Personajes</a>
+              </li>
+              <li class="col nav-item">
+                <a class="margenes" href="./galeria.html">Galeria</a>
+              </li>
+              <li class="col nav-item">
+                <a class="margenes" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <div class="titulo"><h1>MU ONLINE</h1></div>
       <article class="contenedor_flexible">
         <div class="contenedor_Personajes">
-          <img class="imagenes"
+          <img
+            class="imagen"
             src="../img/img_magicGladiator.jpg"
             alt="Imagen portada de un magic gladiador"
           />
@@ -49,7 +83,7 @@
         </div>
         <div class="contenedor_Personajes">
           <img
-            class="imagenes"
+            class="imagen"
             src="../img/img_darkLoad.jpg"
             alt="Imagen portada de un dark lord"
           />
@@ -64,7 +98,7 @@
         </div>
         <div class="contenedor_Personajes">
           <img
-            class="imagenes"
+            class="imagen"
             src="../img/img_fairyElf.jpg"
             alt="Imagen portada una elfa"
           />
@@ -79,7 +113,7 @@
         </div>
         <div class="contenedor_Personajes">
           <img
-            class="imagenes"
+            class="imagen"
             src="../img/img_SM.jpg"
             alt="Imagen portada de un Dark Wizzard"
           />
@@ -93,7 +127,7 @@
         </div>
         <div class="contenedor_Personajes">
           <img
-            class="imagenes"
+            class="imagen"
             src="../img/mu-online-dark-knight.jpg"
             alt="Imagen portada de un Dark Knight"
           />
@@ -111,5 +145,11 @@
       <p>&copy; Todos los derechos reservados</p>
       <p>By Jacobo Dip</p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
